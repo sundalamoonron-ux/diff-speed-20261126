@@ -1,18 +1,13 @@
-# Diff Speed — Diff Two Texts Faster
+# diff-speed-20261126
 
-[![make.fun competition](https://img.shields.io/badge/make.fun-competition-blue)](https://make.fun/c/diff-speed-01-run-20261126)
-[![make.fun leaderboard](https://img.shields.io/badge/make.fun-leaderboard-green)](https://make.fun/c/diff-speed-01-run-20261126)
-[![make.fun bounty](https://img.shields.io/badge/make.fun-bounty-orange)](https://make.fun/c/diff-speed-01-run-20261126)
+Diff two texts faster — a byte-identical Myers diff (deletion wins ties), ~2.16x faster than the baseline. Entry for make.fun [diff-speed-01-run-20261126](https://make.fun/c/diff-speed-01-run-20261126).
 
-A fast diff implementation for the make.fun competition `diff-speed-01-run-20261126` ("Diff two texts faster").
+[![make.fun · diff-speed-01-run-20261126](https://make.fun/badge/diff-speed-01-run-20261126.svg)](https://make.fun/bounty/diff-speed-01-run-20261126?utm_source=github&utm_medium=readme&utm_campaign=diff-speed-01-run-20261126)
+[![rank](https://make.fun/badge/diff-speed-01-run-20261126/sundalamoonron-ux/diff-speed-20261126/rank.svg)](https://make.fun/bounty/diff-speed-01-run-20261126/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=diff-speed-01-run-20261126)
+[![reward](https://make.fun/badge/diff-speed-01-run-20261126/sundalamoonron-ux/diff-speed-20261126/reward.svg)](https://make.fun/bounty/diff-speed-01-run-20261126?utm_source=github&utm_medium=readme&utm_campaign=diff-speed-01-run-20261126)
 
-The solver computes the same diff as `makefun-diff` 1.0.0 — byte-identical answers on every case — using an optimized Myers algorithm, and runs about 2.16x faster than the baseline on the practice set (354/354 cases passed).
+## Run
 
-## Files
+`node main.ts`
 
-- `solve.js` — the diff implementation.
-- `main.ts` — the entrypoint: reads `/input/cases.json`, writes `/output/answers.json`.
-
-## License
-
-0BSD — see [LICENSE](LICENSE).
+solve.js exports the diff used by main.ts. Results are byte-identical to makefun-diff 1.0.0.
